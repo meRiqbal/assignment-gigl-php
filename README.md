@@ -17,7 +17,7 @@ deploying the application in different environments.
 
 Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
-### USAGE
+### SETUP
 ```
 git clone https://github.com/nagasai-iitr/GIGL-PHP.git
 cd GIGL-PHP
