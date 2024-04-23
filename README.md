@@ -2,12 +2,12 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
+    <h1 align="center">Yii 2 Advanced Project managing user database</h1>
     <br>
 </p>
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Yii 2 Advanced Project managing user database is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
+developing complex Web applications with multiple tiers for managing user database integrated with kartik/GridView.
 
 The template includes three tiers: front end, back end, and console, each of which
 is a separate Yii application.
@@ -17,9 +17,21 @@ deploying the application in different environments.
 
 Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
+### USAGE
+```
+git clone https://github.com/nagasai-iitr/GIGL-PHP.git
+cd GIGL-PHP
+```
+Install Composer if you haven't, get it from [getcomposer.org](https://getcomposer.org/download/)
+```
+php init (choose 'developement')
+```
+Update the db component with your Mysql db details in `commom/config/main-local.php`
+```
+composer update
+php yii serve --docroot="backend/web"
+```
+Open http://localhost:8080/index.php?r=accounts-customuser
 
 DIRECTORY STRUCTURE
 -------------------
